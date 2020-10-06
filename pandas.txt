@@ -66,5 +66,47 @@ Notes on Pandas Module
 -groupby sets the index as the given df.groupby["column"].count()["column"]so that a .count() function or a .sum() .mean() etc can be applied to these groups
  here we group by the unique items in the column then count and dsplay the different counts based on the unique values 
 
--  
+-4.8.6
+ we can use df.columns_series=df.column_series.map(MAPFUNCTION) to format or edit an existing series
+ 
+ code for reordering columns:
+   # Reorder the columns in the order you want them to appear.
+     new_column_order = ["School Type", "Total Students", "Total School Budget", "Per Student Budget", "Average Math Score", "Average Reading Score", "% Passing Math", "% Passing Reading", "% Overall Passing"]
+
+  # Assign district summary df the new column order.
+    per_school_summary_df = per_school_summary_df[new_column_order]
+
+    per_school_summary_df.head()
+ 
+-4.9.1
+ pandas has a Series.sort_values(ascending=True or False) can sort a Series or Dataframe by ascending and descending!
+ 
+-4.10.2
+ pandas.Series.groupy(["column_name/index"]).mean()["column_focused"]
+
+-4.10.3
+ combining a series into a dataframe, new_data_frame=pandas.DataFrame({
+	"column_1":Series_1,
+	"column_2":Series_2
+	})
+-4.10.4
+ Format the averages and remove the index name
+
+-4.11.1
+ Establishing the spending range per student
+ The describe() function can be applied to a dataframe or a series and returns the folowing:
+ -number of rows in th given object
+ -the average of rows as mean
+ -the standard deviation of the rows as std
+ -the minimum value of the rows as min
+ -the 25th percentile as 25%
+ -the 50th percentile as 50%
+ -the 75th percentile as 75%
+ -the maximum value of the rows as max
+ DataFrame.describe()
+
+ The cut(DataFrame/Series,bins_list,labels=bins_names) function segments and sorts data values into bins. 
+ 
+-4.11.2
+ 
 
