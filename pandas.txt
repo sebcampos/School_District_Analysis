@@ -63,5 +63,8 @@ Notes on Pandas Module
 -Operations like series= series/series work because both are series with 
  integers and the same indexes
 
--groupby section 4.8.4
+-groupby sets the index as the given df.groupby["column"].count()["column"]so that a .count() function or a .sum() .mean() etc can be applied to these groups
+ here we group by the unique items in the column then count and dsplay the different counts based on the unique values 
+
+-  
 
