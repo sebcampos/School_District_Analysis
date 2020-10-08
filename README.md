@@ -1,7 +1,7 @@
 # School District Analysis
 
 ## Overview and Purpose
-Explain the purpose of this analysis.
+The previous data analysis on our school and student data was discovered to be based on faulty data. The numbers recorded for Thomas High School ninth graders is questionable due to a cheating problem. To resolve our data analysis we will preform the same operations on the dataset(s) but exclude the numbers related to Thomas High School using the Python Pandas module
 ## Results
 - how is the district summary affected
 - how is the school summary affected
